@@ -1,0 +1,499 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- 页面设计：?? | 页面重构：黄健聪 | 创建：2015-09-01 | 最后修改：2015-?-? -->
+    <title>e桶金</title>
+
+    <link rel="shortcut icon" href="/static/favicon/favicon.ico" />
+
+    <link href="../css/desktop.css" rel="stylesheet" />
+
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/uiExtend.js"></script>
+
+</head>
+<body>
+    <div data-ui="header" class="J_header">
+        <div class="h_inner">
+            <div class="i_logo"><a href="#">Logo</a></div>
+            <div class="i_login">
+                <!-- 没登录显示这个 -->
+                <div class="l_not">
+                    <div class="n_item">
+                        <div class="i_default">
+                            <a href="#">登录</a>
+                        </div>
+                    </div>
+                    <div class="n_item">
+                        <div class="i_default">
+                            <a href="#">注册</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 登录了显示这个 -->
+                <div class="l_login">
+                    <div class="l_face">
+                        <img width="60" height="60" src="../tmp/u1.png" />
+                        <a href="#">
+                            <img src="../images/header_face.png" /></a>
+                    </div>
+                    <div class="l_info">
+                        <div class="i_name">比尔盖茨</div>
+                        <div class="i_logout"><a href="#">[退出]</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="i_nav">
+                <div class="n_item">
+                    <div class="i_default"><a href="#">首页</a></div>
+                    <div class="i_menu"></div>
+                </div>
+                <div class="n_item">
+                    <div class="i_default"><a href="#">金价行情</a></div>
+                    <div class="i_menu"></div>
+                </div>
+                <div class="n_item">
+                    <div class="i_default"><a href="#">财经日历</a></div>
+                    <div class="i_menu"></div>
+                </div>
+                <div class="n_item">
+                    <div class="i_default"><a href="#">为你选经销商</a></div>
+                    <div class="i_menu"></div>
+                </div>
+                <div class="n_item">
+                    <div class="i_default"><a href="#">社区</a></div>
+                    <div class="i_menu"></div>
+                </div>
+                <div class="n_item">
+                    <div class="i_default"><a href="#">活动</a></div>
+                    <div class="i_menu"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="J_wrap">
+
+        <div class="J_content mt20 bgfff hasShadow">
+            <div class="J_time clearfix">
+                <div class="t_item">
+                    <div class="i_icon">
+                        <img height="24" src="../images/flag_xg.png" />
+                    </div>
+                    <div class="i_txt">00:00:00</div>
+                </div>
+                <div class="t_item">
+                    <div class="i_icon">
+                        <img height="24" src="../images/flag_xxl.png" />
+                    </div>
+                    <div class="i_txt">00:00:00</div>
+                </div>
+                <div class="t_item">
+                    <div class="i_icon">
+                        <img height="24" src="../images/flag_rb.png" />
+                    </div>
+                    <div class="i_txt">00:00:00</div>
+                </div>
+                <div class="t_item">
+                    <div class="i_icon">
+                        <img height="24" src="../images/flag_yg.png" />
+                    </div>
+                    <div class="i_txt">00:00:00</div>
+                </div>
+                <div class="t_item">
+                    <div class="i_icon">
+                        <img height="24" src="../images/flag_mg.png" />
+                    </div>
+                    <div class="i_txt">00:00:00</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="J_content mt20 bgfff bg1 hasShadow">
+            <div class="fl c_180">
+
+                <div class="J_leftMenu">
+                    <div class="l_item current">
+                        <div class="i_default"><a href="#"><i class="icon">󰃌</i>账户管理</a></div>
+                        <div class="i_menu">
+                            <div class="m_txt current"><a href="#"><i class="icon">󰂻</i>账户资料</a></div>
+                            <div class="m_txt"><a href="#"><i class="icon">󰃔</i>个人资料</a></div>
+                            <div class="m_txt"><a href="#"><i class="icon">󰃉</i>修改密码</a></div>
+                        </div>
+                    </div>
+                    <div class="l_item">
+                        <div class="i_default"><a href="#"><i class="icon">󰇸</i>资金管理</a></div>
+                        <div class="i_menu">
+                            <div class="m_txt"><a href="#"><i class="icon">󰀥</i>额度明細</a></div>
+                            <div class="m_txt"><a href="#"><i class="icon">󰀵</i>存款</a></div>
+                        </div>
+                    </div>
+                    <div class="l_item">
+                        <div class="i_default"><a href="#"><i class="icon">󰃵</i>交易资料</a></div>
+                        <div class="i_menu">
+                            <div class="m_txt"><a href="#"><i class="icon">󰄁</i>交易记录</a></div>
+                        </div>
+                    </div>
+                    <div class="l_item">
+                        <div class="i_default"><a href="#"><i class="icon">󰄎</i>服务管理</a></div>
+                        <div class="i_menu">
+                            <div class="m_txt"><a href="#"><i class="icon">󰃾</i>消息订阅</a></div>
+                            <div class="m_txt"><a href="#"><i class="icon">󰇫</i>微信服务</a></div>
+                            <div class="m_txt"><a href="#"><i class="icon">󰊛</i>问题回馈</a></div>
+                        </div>
+                    </div>
+                    <div class="l_item">
+                        <div class="i_default"><a href="#"><i class="icon">󰄊</i>我的活动</a></div>
+                    </div>
+                    <div class="l_item">
+                        <div class="i_default"><a href="#"><i class="icon">󰇀</i>投票功能</a></div>
+                    </div>
+                    <div class="l_item">
+                        <div class="i_default"><a href="#"><i class="icon">󰊑</i>公告</a></div>
+                    </div>
+                    <div class="l_item">
+                        <div class="i_default"><a href="#"><i class="icon">󰃕</i>老师专区</a></div>
+                        <div class="i_menu">
+                            <div class="m_txt"><a href="#"><i class="icon">󰂰</i>银行资料</a></div>
+                            <div class="m_txt"><a href="#"><i class="icon">󰅐</i>取款</a></div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="fr c_1000">
+
+                <div class="J_title less">
+                    <div class="t_txt">个人资料</div>
+                    <div class="t_tips"></div>
+                    <div class="t_more"></div>
+                </div>
+                <div class="plrb20">
+                    <div class="J_miniTitle">
+                        <div class="m_token"></div>
+                        <div class="m_txt">修改资料</div>
+                    </div>
+
+                    <div class="J_userInfoList">
+
+                        <table style="width: 100%">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 60px;" class="bgf9">
+                                        <div class="J_toolsBar">
+                                            <div class="t_label right">姓名(中)</div>
+                                        </div>
+                                    </td>
+                                    <td colspan="2">
+                                        <div class="J_toolsBar">
+                                            <div class="ml10 t_text w100">
+                                                <label>
+                                                    <input value="justin bieber" type="text">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="bgf9">
+                                        <div class="J_toolsBar">
+                                            <div class="t_label right">姓名(英)</div>
+                                        </div>
+                                    </td>
+                                    <td colspan="2">
+                                        <div class="J_toolsBar">
+                                            <div class="ml10 t_text w300">
+                                                <label>
+                                                    <input value="justin bieber" type="text">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="bgf9">
+                                        <div class="J_toolsBar">
+                                            <div class="t_label right">性别</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="J_toolsBar">
+                                            <div class="ml10 t_check">
+                                                <label>
+                                                    <input type="radio" />男</label>
+                                            </div>
+                                            <div class="ml10 t_check">
+                                                <label>
+                                                    <input type="radio" />女</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="bgf9">
+                                        <div class="J_toolsBar">
+                                            <div class="t_label right">国籍</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="J_toolsBar">
+                                            <div class="ml10 t_select">
+                                                <a href="javascript:;">香港</a>
+                                                <select>
+                                                    <option>香港</option>
+                                                    <option>澳门</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="bgf9">
+                                        <div class="J_toolsBar">
+                                            <div class="t_label right">证件类型</div>
+                                        </div>
+                                    </td>
+                                    <td colspan="2">
+                                        <div class="J_toolsBar">
+                                            <div class="ml10 t_select">
+                                                <a href="javascript:;">身份证件号码</a>
+                                                <select>
+                                                    <option>身份证件号码</option>
+                                                    <option>类型</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="bgf9">
+                                        <div class="J_toolsBar">
+                                            <div class="t_label right">证件号码</div>
+                                        </div>
+                                    </td>
+                                    <td colspan="2">
+                                        <div class="J_toolsBar">
+                                            <div class="ml10 t_text w300">
+                                                <label>
+                                                    <input value="44010513121331213516213121" type="text">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="bgf9">
+                                        <div class="J_toolsBar">
+                                            <div class="t_label right">手机号码</div>
+                                        </div>
+                                    </td>
+                                    <td colspan="3">
+                                        <div class="J_toolsBar">
+                                            <div class="ml10 t_text w180">
+                                                <label>
+                                                    <input value="13123156465" type="text">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </td>
+
+
+
+                                </tr>
+
+                                <tr>
+                                    <td class="bgf9">
+                                        <div class="J_toolsBar">
+                                            <div class="t_label right">电子邮箱</div>
+                                        </div>
+                                    </td>
+                                    <td colspan="9">
+                                        <div class="J_toolsBar">
+                                            <div class="ml10 t_text w300">
+                                                <label>
+                                                    <input value="13123156465@qq.com" type="text">
+                                                </label>
+                                            </div>
+                                            <div class="t_label">（電子郵件可作為您以後的用戶名，用來管理您的帳戶、入金、更改資料以及接收資訊等，請確保資料的準確性並牢記您的電郵設置）</div>
+                                        </div>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="bgf9">
+                                        <div class="J_toolsBar">
+                                            <div class="t_label right">联系地址</div>
+                                        </div>
+                                    </td>
+                                    <td colspan="9">
+                                        <div class="J_toolsBar">
+                                            <div class="ml10 t_text w830">
+                                                <label>
+                                                    <input value="上海市漕河泾开发区地铁站附近 上海腾讯大厦" type="text">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+
+                    </div>
+
+                    <div class="mt20 J_btnGroup md">
+                        <a class="sm abtn orange" href="#">确认修改</a>
+                    </div>
+
+
+
+
+                    <div class="J_miniTitle mt20">
+                        <div class="m_token"></div>
+                        <div class="m_txt">资料上传</div>
+                    </div>
+
+                    <div class="J_table mt10">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>证件名称</td>
+                                    <td>状态</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="width:120px;">身份证明</td>
+                                    <td><span class="cOrange">未上传</span><span class="ml10 cGreen">(联系客服上传)</span></td>
+                                </tr>
+                                <tr>
+                                    <td>地址证明</td>
+                                    <td><span class="cGreen"><i class="icon">󰅖</i> 已上传</span></td>
+                                </tr>
+                                <tr>
+                                    <td>银行证明</td>
+                                    <td><span class="cOrange">未上传</span><span class="ml10 cGreen">(联系客服上传)</span></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+                    <div class="J_miniTitle mt20">
+                        <div class="m_token"></div>
+                        <div class="m_txt">温馨提示 <span class="fz14">(身份證明與銀行證明審核通過後，方可取款。請閣下及時上載資料，以免影響閣下的取款。)</span></div>
+                    </div>
+
+
+                    <div class="lh30">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="tar">身份证明：</td>
+                                    <td class="c54">可使用居民身份證，護照等可作為有效身份證明使用。</td>
+                                </tr>
+                                <tr>
+                                    <td class="tar">地址证明：</td>
+                                    <td class="c54"></td>
+                                </tr>
+                                <tr>
+                                    <td class="tar">银行证明：</td>
+                                    <td class="c54">閣下收款的銀行卡必須為帳戶本人所有，銀行卡號亦須與帳戶登記時一致。</td>
+                                </tr>
+                                <tr>
+                                    <td class="tar">图片格式：</td>
+                                    <td class="c54">支援 jpg\gif\bmp\png\tif 格式，圖片大小需小於 5M。</td>
+                                </tr>
+                                <tr>
+                                    <td class="tar">身份证明上传：</td>
+                                    <td class="c54">可分別上載正反面(若有)或者將同一檔中的正反面上載到身份證正、反面到其中一個欄位皆可。</td>
+                                </tr>
+                                <tr>
+                                    <td class="tar">银行证明上传：</td>
+                                    <td class="c54">需上載銀行卡正面。</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div data-ui="helper" class="J_helper">
+        <div class="h_inner">
+            <div class="i_item">
+                <dl>
+                    <dt>快速服务</dt>
+                    <dd><a href="javascript:;">注册</a></dd>
+                    <dd><a href="javascript:;">登录</a></dd>
+                    <dd><a href="javascript:;">激活卡</a></dd>
+                    <dd><a href="javascript:;">找回密码</a></dd>
+                    <dd><a href="javascript:;">充值</a></dd>
+                </dl>
+            </div>
+            <div class="i_item">
+                <dl>
+                    <dt>帮助中心</dt>
+                    <dd><a href="javascript:;">免费体验</a></dd>
+                    <dd><a href="javascript:;">报名课程</a></dd>
+                    <dd><a href="javascript:;">充值</a></dd>
+                    <dd><a href="javascript:;">支付方式</a></dd>
+                    <dd><a href="javascript:;">使用指南</a></dd>
+                </dl>
+            </div>
+            <div class="i_item">
+                <dl>
+                    <dt>关于我们</dt>
+                    <dd><a href="javascript:;">了解我们</a></dd>
+                    <dd><a href="javascript:;">联系方式</a></dd>
+                    <dd><a href="javascript:;">会员协议</a></dd>
+                    <dd><a href="javascript:;">加入我们</a></dd>
+                    <dd><a href="javascript:;">意见反馈</a></dd>
+                </dl>
+            </div>
+            <div class="i_item">
+                <dl>
+                    <dt>联系我们</dt>
+                    <dd><a href="javascript:;">QQ空间</a></dd>
+                    <dd><a href="javascript:;">新浪微博</a></dd>
+                    <dd><a href="javascript:;">QQ群：8381212348</a></dd>
+                    <dd><a href="javascript:;">QQ群：2991239393</a></dd>
+                </dl>
+            </div>
+            <div class="i_item">
+                <div class="t_code">
+                    <img src="../images/gw_code.jpg" />
+                    <p>（扫二维码关注我们）</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div data-ui="footer" class="J_footer">
+        <div class="f_inner">
+            <div class="i_copyright">
+                <div class="c_left">
+                </div>
+                <div class="c_right">
+                    <p>版权所有 广州e桶金有限公司 Copyright©2015 <a href="http://www.miitbeian.gov.cn/">粤ICP备150591231号-12</a></p>
+                </div>
+            </div>
+            <div class="i_share"></div>
+        </div>
+    </div>
+
+</body>
+</html>

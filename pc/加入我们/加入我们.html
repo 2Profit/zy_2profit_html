@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- 页面设计：?? | 页面重构：黄健聪 | 创建：2015-09-01 | 最后修改：2015-?-? -->
+    <title>e桶金</title>
+
+    <link rel="shortcut icon" href="/static/favicon/favicon.ico" />
+
+    <link href="../css/desktop.css" rel="stylesheet" />
+
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/jquery-ui-slider.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/uiExtend.js"></script>
+
+
+
+    <script type="text/javascript">
+
+        /*第一种形式 第二种形式 更换显示样式*/
+        function setTab(name, cursel, n) {
+            for (var i = 1; i <= n; i++) {
+                var menu = document.getElementById(name + i);
+                var con = document.getElementById("con_" + name + "_" + i);
+                menu.className = i == cursel ? "t_item active" : "t_item";
+                con.style.display = i == cursel ? "block" : "none";
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+    <div data-ui="header" class="J_header index">
+        <div class="h_inner">
+            <div class="i_logo"><a href="#">Logo</a></div>
+            <div class="i_login">
+                <!-- 没登录显示这个 -->
+                <div class="l_not">
+                    <div class="n_item">
+                        <div class="i_default">
+                            <a href="#">登录</a>
+                        </div>
+                    </div>
+                    <div class="n_item">
+                        <div class="i_default">
+                            <a href="#">注册</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 登录了显示这个 -->
+                <div class="l_login">
+                    <div class="l_face">
+                        <img width="60" height="60" src="../tmp/u1.png" />
+                        <a href="#">
+                            <img src="../images/header_face.png" /></a>
+                    </div>
+                    <div class="l_info">
+                        <div class="i_name">比尔盖茨</div>
+                        <div class="i_logout"><a href="#">[退出]</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="i_nav">
+                <div class="n_item">
+                    <div class="i_default"><a href="#">首页</a></div>
+                    <div class="i_menu"></div>
+                </div>
+                <div class="n_item">
+                    <div class="i_default"><a href="#">金价行情</a></div>
+                    <div class="i_menu"></div>
+                </div>
+                <div class="n_item">
+                    <div class="i_default"><a href="#">财经日历</a></div>
+                    <div class="i_menu"></div>
+                </div>
+                <div class="n_item">
+                    <div class="i_default"><a href="#">为你选经销商</a></div>
+                    <div class="i_menu"></div>
+                </div>
+                <div class="n_item">
+                    <div class="i_default"><a href="#">社区</a></div>
+                    <div class="i_menu"></div>
+                </div>
+                <div class="n_item">
+                    <div class="i_default"><a href="#">活动</a></div>
+                    <div class="i_menu"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div data-ui="loginWrap" class="J_loginWrap">
+        <div class="l_left">
+            <div class="J_toolsBar">
+                <div class="t_label">跟随顶尖交易员投资</div>
+                <div class="ml10 t_button">
+                    <a class="abtn green" href="#">立即注册</a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="l_right">
+            <div class="J_toolsBar">
+                <div class="t_text w180">
+                    <label>
+                        <input placeholder="手机号码/邮箱" type="text" />
+                    </label>
+                </div>
+                <div class="ml10 t_text w180">
+                    <label>
+                        <input placeholder="密码" type="password" />
+                    </label>
+                </div>
+                <div class="ml10 t_button">
+                    <a class="abtn red" href="#">登录</a>
+                </div>
+
+                <div class="ml20 t_label">社交帐号登录</div>
+
+                <div class="ml10 t_icon">
+                    <a class="i_link i_sina" href="#"></a>
+                    <a class="i_link i_qq" href="#"></a>
+                    <a class="i_link i_wx" href="#"></a>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <div data-ui="indexMask" class="J_indexMask mini"></div>
+
+
+    <div>
+        <div class="J_content bgfff">
+
+            <div class="J_aboutMe">
+                <div class="a_tab">
+
+                    <div class="t_main">
+                        <div id="con_one_1" style="display: block;" class="m_item">
+
+                            <div class="a_textArea">
+                                <p>&nbsp;</p>
+                                <h3 class="cOrange">你想和我们至盈团队一起工作吗?</h3>
+                                <p class="lh30">驰骋于梦想之都，书写理想仕途。</p>
+                                <p class="lh30">在这个我们为你提供的舞台，每个人都是主角，在这里，你可获得：</p>
+
+                                <p class="lh30">1.优秀的发展平台与广阔的晋升通道，实现自我价值。</p>
+                                <p class="lh30">2.一群充满激情与梦想的朋友。</p>
+                                <p class="lh30">3.专业的技能培训并参与创作决策，真正发挥创意、学以致用，为日后平铺青云路</p>
+                                <p class="lh30">4.与行业顶尖人才共事的机会，</p>
+                                <p>5.轻松和谐的工作气氛、人性化的管理制度，让你至获宾至如归的幸福感（我们提供家庭式的生活设施、节日礼品、每月定期集体活动、每月员工生日PARTY等）</p>
+
+
+                                <h3 class="cOrange">现在的职位空缺包括:</h3>
+
+                                <div class="J_toolsBar">
+                                    <div class="t_button ml10">
+                                        <a class="abtn orange" href="#">软件研发工程师</a>
+                                    </div>
+                                    <div class="t_button ml10">
+                                        <a class="abtn orange" href="#">市场调研及推广专员</a>
+                                    </div>
+                                    <div class="t_button ml10">
+                                        <a class="abtn orange" href="#">网络编辑</a>
+                                    </div>
+                                </div>
+
+                                <div class="mt40">
+                                    <img style="width:100%;" src="../images/follow_me.jpg" />
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="J_cooperation">
+        <div class="c_title"><span>合作伙伴</span></div>
+        <div class="c_inner">
+            <img src="../tmp/cooperation.png" />
+        </div>
+    </div>
+
+    <div data-ui="helper" class="J_helper">
+        <div class="h_inner">
+            <div class="i_item">
+                <dl>
+                    <dt>快速服务</dt>
+                    <dd><a href="javascript:;">注册</a></dd>
+                    <dd><a href="javascript:;">登录</a></dd>
+                    <dd><a href="javascript:;">激活卡</a></dd>
+                    <dd><a href="javascript:;">找回密码</a></dd>
+                    <dd><a href="javascript:;">充值</a></dd>
+                </dl>
+            </div>
+            <div class="i_item">
+                <dl>
+                    <dt>帮助中心</dt>
+                    <dd><a href="javascript:;">免费体验</a></dd>
+                    <dd><a href="javascript:;">报名课程</a></dd>
+                    <dd><a href="javascript:;">充值</a></dd>
+                    <dd><a href="javascript:;">支付方式</a></dd>
+                    <dd><a href="javascript:;">使用指南</a></dd>
+                </dl>
+            </div>
+            <div class="i_item">
+                <dl>
+                    <dt>关于我们</dt>
+                    <dd><a href="javascript:;">了解我们</a></dd>
+                    <dd><a href="javascript:;">联系方式</a></dd>
+                    <dd><a href="javascript:;">会员协议</a></dd>
+                    <dd><a href="javascript:;">加入我们</a></dd>
+                    <dd><a href="javascript:;">意见反馈</a></dd>
+                </dl>
+            </div>
+            <div class="i_item">
+                <dl>
+                    <dt>联系我们</dt>
+                    <dd><a href="javascript:;">QQ空间</a></dd>
+                    <dd><a href="javascript:;">新浪微博</a></dd>
+                    <dd><a href="javascript:;">QQ群：8381212348</a></dd>
+                    <dd><a href="javascript:;">QQ群：2991239393</a></dd>
+                </dl>
+            </div>
+            <div class="i_item">
+                <div class="t_code">
+                    <img src="../images/gw_code.jpg" />
+                    <p>（扫二维码关注我们）</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div data-ui="footer" class="J_footer">
+        <div class="f_inner">
+            <div class="i_copyright">
+                <div class="c_left">
+                </div>
+                <div class="c_right">
+                    <p>版权所有 广州e桶金有限公司 Copyright©2015 <a href="http://www.miitbeian.gov.cn/">粤ICP备150591231号-12</a></p>
+                </div>
+            </div>
+            <div class="i_share"></div>
+        </div>
+    </div>
+
+</body>
+</html>

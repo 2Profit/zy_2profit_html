@@ -1,0 +1,348 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- 设计：市场部 | 重构：黄健聪 | 创建：2015/10/02 | 更新：2015/10/02 |  -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Aowork">
+    <meta name="description" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>e桶金</title>
+
+    <link href="../css/mobile.css" rel="stylesheet" />
+
+    <script src="../js/zepto.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/uiExtend.js"></script>
+
+    <script type="text/javascript">jc.rem.on();</script>
+
+
+    <script type="text/javascript">
+
+        /*第一种形式 第二种形式 更换显示样式*/
+        function setTab(name, cursel, n) {
+            for (var i = 1; i <= n; i++) {
+                var menu = document.getElementById(name + i);
+                var con = document.getElementById("con_" + name + "_" + i);
+                menu.className = i == cursel ? "t_item active" : "t_item";
+                con.style.display = i == cursel ? "block" : "none";
+            }
+        }
+
+
+    </script>
+
+</head>
+<body>
+    <div data-ui="header" class="J_header">
+        <div class="h_center">投票</div>
+
+    </div>
+    <div class="J_tableTitle">本期投票</div>
+
+    <div class="J_vote">
+        <div class="v_title">“十二五”期间，政治协商制度的特点是?</div>
+        <div class="v_content">
+            <div class="c_item">
+                <a href="javascript:">
+                    <label>
+                        <input type="radio">
+                        你認為美元何時加息
+
+                    </label>
+
+                </a>
+            </div>
+            <div class="c_item">
+                <a href="javascript:">
+                    <label>
+                        <input type="radio">
+                        你是否認為A股已見底
+
+                    </label>
+
+                </a>
+            </div>
+            <div class="c_item">
+                <a href="javascript:">
+                    <label>
+                        <input type="radio">
+                        你認為中央救市已有成效
+
+                    </label>
+
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="J_tableTitle">本期投票结果</div>
+
+
+    <div class="bgfff">
+        <div class="J_voteSuccess">
+            <div class="v_item">
+                <div class="i_left">赞成</div>
+                <div class="i_right">
+                    <div style="width: 100%; background-color: #ee6a53;" class="r_bar">
+                        <div class="b_txt">100%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="v_item">
+                <div class="i_left">不赞成</div>
+                <div class="i_right">
+                    <div style="width: 80%; background-color: #9bcc6a;" class="r_bar">
+                        <div class="b_txt">80%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="v_item">
+                <div class="i_left">待定</div>
+                <div class="i_right">
+                    <div style="width: 80%; background-color: #55c0e6;" class="r_bar">
+                        <div class="b_txt">80%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="J_code mt10">
+            <div class="c_inner clearfix">
+                <div class="i_left">
+                    <div class="l_input">
+                        <input type="text" />
+                    </div>
+                </div>
+                <div class="i_right">
+                    <a href="#">
+                        <img src="../images/code.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="J_btnGroup">
+            <a class="orange" href="#">我要投票</a>
+        </div>
+
+    </div>
+
+
+    <div class="J_tableTitle">过往投票</div>
+
+    <div class="J_more">
+        <div class="m_item">
+            <div class="i_left">
+                <a href="#">过往投票<span>回复(258)</span></a>
+            </div>
+            <div class="i_right">
+                2015-15-15
+            </div>
+        </div>
+        <div class="m_item">
+            <div class="i_left">
+                <a href="#">过往投票<span>回复(258)</span></a>
+            </div>
+            <div class="i_right">
+                2015-15-15
+            </div>
+        </div>
+        <div class="m_item">
+            <div class="i_left">
+                <a href="#">过往投票<span>回复(258)</span></a>
+            </div>
+            <div class="i_right">
+                2015-15-15
+            </div>
+        </div>
+        <div class="m_item">
+            <div class="i_left">
+                <a href="#">过往投票<span>回复(258)</span></a>
+            </div>
+            <div class="i_right">
+                2015-15-15
+            </div>
+        </div>
+    </div>
+
+    <div class="J_tableTitle">用户评论</div>
+
+    <div class="J_tab">
+        <div class="t_title">
+            <div id="one1" onclick="setTab('one',1,2)" class="t_item active"><a href="javascript:;">全部评论(10)</a></div>
+            <div id="one2" onclick="setTab('one',2,2)" class="t_item"><a href="javascript:;">我的回复(2)</a></div>
+        </div>
+        <div class="t_main">
+            <div id="con_one_1" style="display: block;" class="m_item">
+
+
+                <div data-ui="commentsList" class="J_commentsList">
+                    <div class="c_item">
+                        <div class="i_left">
+                            <div class="l_img">
+                                <img src="../tmp/face_08.jpg">
+                            </div>
+                            <div class="l_hg"></div>
+                        </div>
+                        <div class="i_right">
+                            <div class="r_info clearfix">
+                                <div class="fl">
+                                    <div class="i_now">1楼</div>
+                                    RayStation 时间: 2015-05-06
+                                </div>
+                                <div class="fr">
+                                    <a class="i_replyBtn" href="javascript:;">赞(20) </a>
+                                    <span>| </span>
+                                    <a class="i_replyBtn" href="javascript:showDialog();">回复</a>
+                                    <span>| </span>
+                                    <a class="i_replyBtn" href="javascript:;">举报</a>
+                                </div>
+                            </div>
+                            <div class="r_content">实用  我喜欢！</div>
+
+                            <div class="r_reply">
+                                <div class="c_item">
+                                    <div class="i_left">
+                                        <div class="l_img">
+                                            <img src="../tmp/face_06.jpg">
+                                        </div>
+                                        <div class="l_hg"></div>
+                                    </div>
+                                    <div class="i_right">
+                                        <div class="r_info clearfix">
+                                            <div class="fl">
+                                                Yellow 回复 RayStation 时间: 2015-05-06
+                                            </div>
+                                            <div class="fr">
+                                                <a class="i_replyBtn" href="javascript:;">赞(20) </a>
+                                                <span>| </span>
+                                                <a class="i_replyBtn" href="javascript:;">举报</a>
+                                            </div>
+                                        </div>
+                                        <div class="r_content">的确实用  我喜欢！</div>
+                                    </div>
+
+                                </div>
+                                <div class="c_item">
+                                    <div class="i_left">
+                                        <div class="l_img">
+                                            <img src="../tmp/face_05.jpg">
+                                        </div>
+                                        <div class="l_hg"></div>
+                                    </div>
+                                    <div class="i_right">
+                                        <div class="r_info clearfix">
+                                            <div class="fl">
+                                                Blue 回复 RayStation 时间: 2015-05-06
+                                            </div>
+                                            <div class="fr">
+                                                <a class="i_replyBtn" href="javascript:;">赞(20) </a>
+                                                <span>| </span>
+                                                <a class="i_replyBtn" href="javascript:;">举报</a>
+                                            </div>
+                                        </div>
+                                        <div class="r_content">的确实用呀  我喜欢！</div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="c_item">
+                        <div class="i_left">
+                            <div class="l_img">
+                                <img src="../tmp/face_03.jpg">
+                            </div>
+                            <div class="l_hg"></div>
+                        </div>
+                        <div class="i_right">
+                            <div class="r_info clearfix">
+                                <div class="fl">
+                                    <div class="i_now">2楼</div>
+                                    RayStation 时间: 2015-05-06
+                                </div>
+                                <div class="fr">
+                                    <a class="i_replyBtn" href="javascript:;">赞(20) </a>
+                                    <span>| </span>
+                                    <a class="i_replyBtn" href="javascript:showDialog();">回复</a>
+                                    <span>| </span>
+                                    <a class="i_replyBtn" href="javascript:;">举报</a>
+                                </div>
+                            </div>
+                            <div class="r_content">非常满意的一次，全部满分，这次真的很开心，好好给你评价一下，经得起摔打磕碰，也非常的正规；外观靓丽，经典绿色，能够给人有一个安静的学习状态，颜色也很好看，效果也很好，对着眼睛也感觉很舒服，没有那种刺眼的感觉，对眼睛不容易产生眼疲劳，非常人性化的设计，我个人感觉，不比国际名站差，功能很多，亮度档位，真的很是不错，我择这网站是对的，谢谢！！</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="con_one_2" class="m_item">
+
+                <div data-ui="commentsList" class="J_commentsList">
+
+                    <div class="c_item">
+                        <div class="i_left">
+                            <div class="l_img">
+                                <img src="../tmp/face_03.jpg">
+                            </div>
+                            <div class="l_hg"></div>
+                        </div>
+                        <div class="i_right">
+                            <div class="r_info clearfix">
+                                <div class="fl">RayStation 时间: 2015-05-06</div>
+                            </div>
+                            <div class="r_content">非常满意的一次，全部满分，这次真的很开心，好好给你评价一下，经得起摔打磕碰，也非常的正规；外观靓丽，经典绿色，能够给人有一个安静的学习状态，颜色也很好看，效果也很好，对着眼睛也感觉很舒服，没有那种刺眼的感觉，对眼睛不容易产生眼疲劳，非常人性化的设计，我个人感觉，不比国际名站差，功能很多，亮度档位，真的很是不错，我择这网站是对的，谢谢！！</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="J_tableTitle">我要评论</div>
+
+
+    <div class="J_reply">
+        <!-- 没登录的情况 -->
+        <div class="r_login">
+            <div class="J_btnGroup clearfix more">
+                <a class="orange left" href="#">登录</a>
+                <a class="blue right" href="#">注册</a>
+            </div>
+        </div>
+
+        <!-- 登录后的情况 -->
+        <div class="r_notLogin">
+            <textarea></textarea>
+            <div class="J_btnGroup">
+                <a class="orange" href="#">回复</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        jc.dialog.get("../dialog/回复评论弹窗.html", function (obj) {
+            obj.show();
+        }, "reply_win");
+
+    </script>
+
+</body>
+</html>

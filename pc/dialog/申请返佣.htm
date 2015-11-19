@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript">
+        $("select").change(function () {
+            var prev = $(this).prev();
+            if (prev.is("a")) {
+                prev.text($(this).find("option:selected").text());
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="J_dialog J_dialogBuyIng">
+        <div class="plrb20">
+            <div class="d_title">
+                <div class="t_txt">申请返佣</div>
+                <div data-close="true" class="t_close"><a href="javascript:;"><i class="icon">󰂳</i></a></div>
+            </div>
+
+            <div class="mt20 plr40">
+                <div class="lh30"><i class="fz22 icon cRed">󰊼</i>请务必先通过本站开户，再提交返佣申请。提交申请后，我们将在1个工作日以内邮件形式通知结果。</div>
+
+                <div class="clearfix centerXLine">
+                    <div style="width:300px;" class="fl">
+
+                        <div class="J_miniTitle mt20">
+                            <div class="m_token"></div>
+                            <div class="m_txt">帐号信息</div>
+                        </div>
+
+                        <div class="J_toolsBar mt10">
+                            <div class="t_label w80"><b class="cRed fz16">* </b>开户平台</div>
+                            <div class="t_select w180">
+                                <a href="javascript:;">请选择开户平台</a>
+                                <select>
+                                    <option>请选择开户平台</option>
+                                    <option>请开户平台</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="J_toolsBar mt10">
+                            <div class="t_label w80"><b class="cRed fz16">* </b>开户邮箱</div>
+                            <div class="t_text w180">
+                                <label>
+                                    <input placeholder="填写开户邮箱" type="text" />
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class="J_toolsBar mt10">
+                            <div class="t_label w80"><b class="cRed fz16">* </b>MT4帐号</div>
+                            <div class="t_text w180">
+                                <label>
+                                    <input placeholder="申请返佣帐号" type="text" />
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div style="width:300px;" class="fr">
+                        <div class="J_miniTitle mt20">
+                            <div class="m_token"></div>
+                            <div class="m_txt">返佣银行卡信息</div>
+                        </div>
+                        <div class="J_toolsBar mt10">
+                            <div class="t_label w80"><b class="cRed fz16">* </b>银行卡号</div>
+                            <div class="t_text w180">
+                                <label>
+                                    <input placeholder="返佣收款人储蓄卡号" type="text" />
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class="J_toolsBar mt10">
+                            <div class="t_label w80"><b class="cRed fz16">* </b>开户银行</div>
+                            <div class="t_text w180">
+                                <label>
+                                    <input placeholder="储蓄卡所属银行" type="text" />
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class="J_toolsBar mt10">
+                            <div class="t_label w80"><b class="cRed fz16">* </b>开户姓名</div>
+                            <div class="t_text w180">
+                                <label>
+                                    <input placeholder="储蓄卡开户人姓名" type="text" />
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="d_btnGrounp mt20">
+                    <a class="abtn orange" href="#">提交申请</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

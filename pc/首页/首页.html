@@ -1,0 +1,932 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- 页面设计：?? | 页面重构：黄健聪 | 创建：2015-09-01 | 最后修改：2015-?-? -->
+    <title>e桶金</title>
+
+    <link rel="shortcut icon" href="/static/favicon/favicon.ico" />
+
+    <link href="../css/desktop.css" rel="stylesheet" />
+
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/uiExtend.js"></script>
+
+
+
+</head>
+<body>
+    <div data-ui="header" class="J_header index">
+        <div class="h_inner">
+            <div class="i_logo">
+                <a href="#">
+                    <img src="../images/logo.png" />
+                </a>
+            </div>
+
+            <div class="i_nav">
+                <div class="n_item">
+                    <div class="i_default"><a href="#"><i class="icon">󰇯</i><span class="cOrange">4009-500-888</span></a></div>
+                    <div class="i_menu"></div>
+                </div>
+            </div>
+            <div class="i_login">
+                <!-- 没登录显示这个 -->
+                <div class="l_not">
+                    <div class="n_item">
+                        <div class="i_default">
+                            <a href="#">登录</a>
+                        </div>
+                    </div>
+                    <div class="n_item">
+                        <div class="i_default">
+                            <a href="#">注册</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 登录了显示这个 -->
+                <div class="l_login">
+                    <div class="l_face">
+                        <img width="60" height="60" src="../tmp/u1.png" />
+                        <a href="#">
+                            <img src="../images/header_face.png" />
+                        </a>
+                    </div>
+                    <div class="l_info">
+                        <div class="i_name">比尔盖茨</div>
+                        <div class="i_logout"><a href="#">[退出]</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="i_nav">
+                <div class="n_item current">
+                    <div class="i_default"><a href="#">首页</a></div>
+                    <div class="i_menu"></div>
+                </div>
+                <div class="n_item">
+                    <div class="i_default"><a href="#">优惠活动</a></div>
+                    <div class="i_menu"></div>
+                </div>
+                <div class="n_item">
+                    <div class="i_default"><a href="#">至盈社区</a></div>
+                    <div class="i_menu"></div>
+                </div>
+                <div class="n_item">
+                    <div class="i_default"><a href="#">财经日历</a></div>
+                    <div class="i_menu"></div>
+                </div>
+                <div class="n_item">
+                    <div class="i_default"><a href="#">旗下APP</a></div>
+                    <div class="i_menu"></div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div data-ui="loginWrap" class="J_loginWrap">
+        <div class="l_left">
+            <div class="J_toolsBar">
+                <div class="t_label">跟随顶尖交易员投资</div>
+                <div class="ml10 t_button">
+                    <a class="abtn green" href="#">立即注册</a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="l_right">
+            <div class="J_toolsBar">
+                <div class="t_text w180">
+                    <label>
+                        <input placeholder="手机号码/邮箱" type="text" />
+                    </label>
+                </div>
+                <div class="ml10 t_text w180">
+                    <label>
+                        <input placeholder="密码" type="password" />
+                    </label>
+                </div>
+                <div class="ml10 t_button">
+                    <a class="abtn red" href="#">登录</a>
+                </div>
+
+                <div class="ml20 t_label">社交帐号登录</div>
+
+                <div class="ml10 t_icon">
+                    <a class="i_link i_sina" href="#"></a>
+                    <a class="i_link i_qq" href="#"></a>
+                    <a class="i_link i_wx" href="#"></a>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <div data-ui="indexMask" class="J_indexMask"></div>
+
+    <div data-ui="silder" class="J_silder">
+        <div class="s_main">
+            <div class="m_item" style="background-image: url(../tmp/b1.png)"><a href="#"></a></div>
+            <div class="m_item" style="background-image: url(../tmp/b2.png)"><a href="#"></a></div>
+            <div class="m_item" style="background-image: url(../tmp/b3.png)"><a href="#"></a></div>
+        </div>
+        <div class="s_controller"></div>
+        <div class="s_step">
+            <a class="s_btn b_left" href="javascript:;">
+                <img src="../images/b_left.png" />
+            </a>
+            <a class="s_btn b_right" href="javascript:;">
+                <img src="../images/b_right.png" />
+            </a>
+        </div>
+    </div>
+
+
+    <div class="J_content mt-260 bgfff hasShadow">
+        <div class="fl c_760">
+            <div class="pau">
+
+                <div class="J_jjsHeader clearfix">
+                    <div class="j_left">
+                    </div>
+                    <div class="j_right">
+                        <div class="r_top clearfix">
+                            <div class="t_left">
+                                <input placeholder="输入关键字进行搜索" type="text" />
+                            </div>
+                            <div class="t_right">
+                                <a class="up" href="javascript:;">至盈推荐<span></span></a>
+                            </div>
+                        </div>
+                        <div class="r_bottom clearfix">
+                            <a class="up" href="javascript:;">黄金返佣<span></span></a>
+                            <a class="down" href="javascript:;">最低开户入金<span></span></a>
+                            <a href="javascript:;">出入金免手续费<span></span></a>
+                            <a href="javascript:;">最大的杠杆<span></span></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="J_jjsList">
+                    <div class="j_inner">
+                        <div class="i_main">
+                            <div class="m_item">
+                                <div class="i_pic">
+                                    <div class="p_logo">
+                                        <img style="width:140px; height:46px;" src="../tmp/j2.jpg" />
+                                    </div>
+                                    <div class="p_num">20美元</div>
+                                    <div class="p_txt">黄金返佣</div>
+                                    <div class="p_over"><i class="icon">󰅖</i><span>2020</span>已申请</div>
+                                    <div class="p_btn"><a href="#"><img src="../images/mskh_btn_bg.png" /></a></div>
+                                </div>
+                                <div class="i_info clearfix">
+                                    <div class="i_left">
+                                        <div class="l_name">金道環球投資有限公司</div>
+                                        <div class="l_txt">
+                                            <span class="cRed">优势</span>：NDD模式 上市子公司
+                                        </div>
+                                        <div class="l_txt">
+                                            点差：黄金4.5
+                                        </div>
+                                        <div class="l_txt">
+                                            最少入金：5
+                                        </div>
+                                        <div class="l_txt">
+                                            最小交易：0.01
+                                        </div>
+                                        <div class="l_txt">
+                                            最小开户：500
+                                        </div>
+                                        <div class="l_txt">
+                                            最大杠杆：1:400
+                                        </div>
+                                    </div>
+                                    <div class="i_right">
+                                        <div class="r_txt"><span>至盈推荐</span><img src="../images/good_orange.png" /><img src="../images/good_orange.png" /><img src="../images/good_orange.png" /></div>
+                                        <div class="r_btn">
+                                            <a class="abtn green" href="#">优惠活动</a>
+                                        </div>
+                                        <div class="r_btn">
+                                            <a class="abtn orange" href="#">了解详情</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_item">
+                                <div class="i_pic">
+                                    <div class="p_logo">
+                                        <img style="width:140px; height:46px;" src="../tmp/j2.jpg" />
+                                    </div>
+                                    <div class="p_num">20美元</div>
+                                    <div class="p_txt">黄金返佣</div>
+                                    <div class="p_over"><i class="icon">󰅖</i><span>2020</span>已申请</div>
+                                    <div class="p_btn"><a href="#"><img src="../images/mskh_btn_bg.png" /></a></div>
+                                </div>
+                                <div class="i_info clearfix">
+                                    <div class="i_left">
+                                        <div class="l_name">金道環球投資有限公司</div>
+                                        <div class="l_txt">
+                                            <span class="cRed">优势</span>：NDD模式 上市子公司
+                                        </div>
+                                        <div class="l_txt">
+                                            点差：黄金4.5
+                                        </div>
+                                        <div class="l_txt">
+                                            最少入金：5
+                                        </div>
+                                        <div class="l_txt">
+                                            最小交易：0.01
+                                        </div>
+                                        <div class="l_txt">
+                                            最小开户：500
+                                        </div>
+                                        <div class="l_txt">
+                                            最大杠杆：1:400
+                                        </div>
+                                    </div>
+                                    <div class="i_right">
+                                        <div class="r_txt"><span>至盈推荐</span><img src="../images/good_orange.png" /><img src="../images/good_orange.png" /><img src="../images/good_orange.png" /></div>
+                                        <div class="r_btn">
+                                            <a class="abtn green" href="#">优惠活动</a>
+                                        </div>
+                                        <div class="r_btn">
+                                            <a class="abtn orange" href="#">了解详情</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_item">
+                                <div class="i_pic">
+                                    <div class="p_logo">
+                                        <img style="width:140px; height:46px;" src="../tmp/j2.jpg" />
+                                    </div>
+                                    <div class="p_num">20美元</div>
+                                    <div class="p_txt">黄金返佣</div>
+                                    <div class="p_over"><i class="icon">󰅖</i><span>2020</span>已申请</div>
+                                    <div class="p_btn"><a href="#"><img src="../images/mskh_btn_bg.png" /></a></div>
+                                </div>
+                                <div class="i_info clearfix">
+                                    <div class="i_left">
+                                        <div class="l_name">金道環球投資有限公司</div>
+                                        <div class="l_txt">
+                                            <span class="cRed">优势</span>：NDD模式 上市子公司
+                                        </div>
+                                        <div class="l_txt">
+                                            点差：黄金4.5
+                                        </div>
+                                        <div class="l_txt">
+                                            最少入金：5
+                                        </div>
+                                        <div class="l_txt">
+                                            最小交易：0.01
+                                        </div>
+                                        <div class="l_txt">
+                                            最小开户：500
+                                        </div>
+                                        <div class="l_txt">
+                                            最大杠杆：1:400
+                                        </div>
+                                    </div>
+                                    <div class="i_right">
+                                        <div class="r_txt"><span>至盈推荐</span><img src="../images/good_orange.png" /><img src="../images/good_orange.png" /><img src="../images/good_orange.png" /></div>
+                                        <div class="r_btn">
+                                            <a class="abtn green" href="#">优惠活动</a>
+                                        </div>
+                                        <div class="r_btn">
+                                            <a class="abtn orange" href="#">了解详情</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_item">
+                                <div class="i_pic">
+                                    <div class="p_logo">
+                                        <img style="width:140px; height:46px;" src="../tmp/j2.jpg" />
+                                    </div>
+                                    <div class="p_num">20美元</div>
+                                    <div class="p_txt">黄金返佣</div>
+                                    <div class="p_over"><i class="icon">󰅖</i><span>2020</span>已申请</div>
+                                    <div class="p_btn"><a href="#"><img src="../images/mskh_btn_bg.png" /></a></div>
+                                </div>
+                                <div class="i_info clearfix">
+                                    <div class="i_left">
+                                        <div class="l_name">金道環球投資有限公司</div>
+                                        <div class="l_txt">
+                                            <span class="cRed">优势</span>：NDD模式 上市子公司
+                                        </div>
+                                        <div class="l_txt">
+                                            点差：黄金4.5
+                                        </div>
+                                        <div class="l_txt">
+                                            最少入金：5
+                                        </div>
+                                        <div class="l_txt">
+                                            最小交易：0.01
+                                        </div>
+                                        <div class="l_txt">
+                                            最小开户：500
+                                        </div>
+                                        <div class="l_txt">
+                                            最大杠杆：1:400
+                                        </div>
+                                    </div>
+                                    <div class="i_right">
+                                        <div class="r_txt"><span>至盈推荐</span><img src="../images/good_orange.png" /><img src="../images/good_orange.png" /><img src="../images/good_orange.png" /></div>
+                                        <div class="r_btn">
+                                            <a class="abtn green" href="#">优惠活动</a>
+                                        </div>
+                                        <div class="r_btn">
+                                            <a class="abtn orange" href="#">了解详情</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_item">
+                                <div class="i_pic">
+                                    <div class="p_logo">
+                                        <img style="width:140px; height:46px;" src="../tmp/j2.jpg" />
+                                    </div>
+                                    <div class="p_num">20美元</div>
+                                    <div class="p_txt">黄金返佣</div>
+                                    <div class="p_over"><i class="icon">󰅖</i><span>2020</span>已申请</div>
+                                    <div class="p_btn"><a href="#"><img src="../images/mskh_btn_bg.png" /></a></div>
+                                </div>
+                                <div class="i_info clearfix">
+                                    <div class="i_left">
+                                        <div class="l_name">金道環球投資有限公司</div>
+                                        <div class="l_txt">
+                                            <span class="cRed">优势</span>：NDD模式 上市子公司
+                                        </div>
+                                        <div class="l_txt">
+                                            点差：黄金4.5
+                                        </div>
+                                        <div class="l_txt">
+                                            最少入金：5
+                                        </div>
+                                        <div class="l_txt">
+                                            最小交易：0.01
+                                        </div>
+                                        <div class="l_txt">
+                                            最小开户：500
+                                        </div>
+                                        <div class="l_txt">
+                                            最大杠杆：1:400
+                                        </div>
+                                    </div>
+                                    <div class="i_right">
+                                        <div class="r_txt"><span>至盈推荐</span><img src="../images/good_orange.png" /><img src="../images/good_orange.png" /><img src="../images/good_orange.png" /></div>
+                                        <div class="r_btn">
+                                            <a class="abtn green" href="#">优惠活动</a>
+                                        </div>
+                                        <div class="r_btn">
+                                            <a class="abtn orange" href="#">了解详情</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_item">
+                                <div class="i_pic">
+                                    <div class="p_logo">
+                                        <img style="width:140px; height:46px;" src="../tmp/j2.jpg" />
+                                    </div>
+                                    <div class="p_num">20美元</div>
+                                    <div class="p_txt">黄金返佣</div>
+                                    <div class="p_over"><i class="icon">󰅖</i><span>2020</span>已申请</div>
+                                    <div class="p_btn"><a href="#"><img src="../images/mskh_btn_bg.png" /></a></div>
+                                </div>
+                                <div class="i_info clearfix">
+                                    <div class="i_left">
+                                        <div class="l_name">金道環球投資有限公司</div>
+                                        <div class="l_txt">
+                                            <span class="cRed">优势</span>：NDD模式 上市子公司
+                                        </div>
+                                        <div class="l_txt">
+                                            点差：黄金4.5
+                                        </div>
+                                        <div class="l_txt">
+                                            最少入金：5
+                                        </div>
+                                        <div class="l_txt">
+                                            最小交易：0.01
+                                        </div>
+                                        <div class="l_txt">
+                                            最小开户：500
+                                        </div>
+                                        <div class="l_txt">
+                                            最大杠杆：1:400
+                                        </div>
+                                    </div>
+                                    <div class="i_right">
+                                        <div class="r_txt"><span>至盈推荐</span><img src="../images/good_orange.png" /><img src="../images/good_orange.png" /><img src="../images/good_orange.png" /></div>
+                                        <div class="r_btn">
+                                            <a class="abtn green" href="#">优惠活动</a>
+                                        </div>
+                                        <div class="r_btn">
+                                            <a class="abtn orange" href="#">了解详情</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_item">
+                                <div class="i_pic">
+                                    <div class="p_logo">
+                                        <img style="width:140px; height:46px;" src="../tmp/j2.jpg" />
+                                    </div>
+                                    <div class="p_num">20美元</div>
+                                    <div class="p_txt">黄金返佣</div>
+                                    <div class="p_over"><i class="icon">󰅖</i><span>2020</span>已申请</div>
+                                    <div class="p_btn"><a href="#"><img src="../images/mskh_btn_bg.png" /></a></div>
+                                </div>
+                                <div class="i_info clearfix">
+                                    <div class="i_left">
+                                        <div class="l_name">金道環球投資有限公司</div>
+                                        <div class="l_txt">
+                                            <span class="cRed">优势</span>：NDD模式 上市子公司
+                                        </div>
+                                        <div class="l_txt">
+                                            点差：黄金4.5
+                                        </div>
+                                        <div class="l_txt">
+                                            最少入金：5
+                                        </div>
+                                        <div class="l_txt">
+                                            最小交易：0.01
+                                        </div>
+                                        <div class="l_txt">
+                                            最小开户：500
+                                        </div>
+                                        <div class="l_txt">
+                                            最大杠杆：1:400
+                                        </div>
+                                    </div>
+                                    <div class="i_right">
+                                        <div class="r_txt"><span>至盈推荐</span><img src="../images/good_orange.png" /><img src="../images/good_orange.png" /><img src="../images/good_orange.png" /></div>
+                                        <div class="r_btn">
+                                            <a class="abtn green" href="#">优惠活动</a>
+                                        </div>
+                                        <div class="r_btn">
+                                            <a class="abtn orange" href="#">了解详情</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_item">
+                                <div class="i_pic">
+                                    <div class="p_logo">
+                                        <img style="width:140px; height:46px;" src="../tmp/j2.jpg" />
+                                    </div>
+                                    <div class="p_num">20美元</div>
+                                    <div class="p_txt">黄金返佣</div>
+                                    <div class="p_over"><i class="icon">󰅖</i><span>2020</span>已申请</div>
+                                    <div class="p_btn"><a href="#"><img src="../images/mskh_btn_bg.png" /></a></div>
+                                </div>
+                                <div class="i_info clearfix">
+                                    <div class="i_left">
+                                        <div class="l_name">金道環球投資有限公司</div>
+                                        <div class="l_txt">
+                                            <span class="cRed">优势</span>：NDD模式 上市子公司
+                                        </div>
+                                        <div class="l_txt">
+                                            点差：黄金4.5
+                                        </div>
+                                        <div class="l_txt">
+                                            最少入金：5
+                                        </div>
+                                        <div class="l_txt">
+                                            最小交易：0.01
+                                        </div>
+                                        <div class="l_txt">
+                                            最小开户：500
+                                        </div>
+                                        <div class="l_txt">
+                                            最大杠杆：1:400
+                                        </div>
+                                    </div>
+                                    <div class="i_right">
+                                        <div class="r_txt"><span>至盈推荐</span><img src="../images/good_orange.png" /><img src="../images/good_orange.png" /><img src="../images/good_orange.png" /></div>
+                                        <div class="r_btn">
+                                            <a class="abtn green" href="#">优惠活动</a>
+                                        </div>
+                                        <div class="r_btn">
+                                            <a class="abtn orange" href="#">了解详情</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="J_page mt20">这里分页</div>
+
+
+            </div>
+        </div>
+        <div class="fr c_430">
+            <div class="pau">
+
+                <div class="J_btnList">
+                    <div class="b_item big"><a href="#">申请返佣</a></div>
+                    <div class="b_item"><a class="i1" href="#"><span></span>更多经纪商</a></div>
+                    <div class="b_item"><a class="i2" href="#"><span></span>赠金优惠</a></div>
+                    <div class="b_item"><a class="i3" href="#"><span></span>外汇资讯</a></div>
+                </div>
+
+                <div class="J_titleGray mt20">
+                    <div class="t_txt">行情</div>
+                </div>
+
+                <div data-ui="market" class="J_market">
+                    <div class="m_table">
+                        <table>
+                            <tbody>
+                                <tr class="up">
+                                    <td>伦敦金/美元</td>
+                                    <td><i class="icon">󰄓</i></td>
+                                    <td>1172.19</td>
+                                    <td>-10.26</td>
+                                </tr>
+                                <tr class="down">
+                                    <td>伦敦金/美元</td>
+                                    <td><i class="icon">󰄑</i></td>
+                                    <td>1172.19</td>
+                                    <td>-10.26</td>
+                                </tr>
+                                <tr class="down">
+                                    <td>美元指数</td>
+                                    <td><i class="icon">󰄑</i></td>
+                                    <td>1172.19</td>
+                                    <td>-10.26</td>
+                                </tr>
+                                <tr class="down">
+                                    <td>纽约原油</td>
+                                    <td><i class="icon">󰄑</i></td>
+                                    <td>1172.19</td>
+                                    <td>-10.26</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="m_tab mt20">
+                        <div class="t_title">
+                            <div class="t_item active"><a href="javascript:;">伦敦金</a></div>
+                            <div class="t_item"><a href="javascript:;">伦敦银</a></div>
+
+                        </div>
+                        <div class="t_main">
+                            <div class="m_item active"><img style="width:100%;" src="../tmp/tmp_kline.png" /></div>
+                            <div class="m_item"><img style="width:100%;" src="../tmp/tmp_kline.png" /></div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="J_titleGray mt20">
+                    <div class="t_txt">返佣流程</div>
+                </div>
+                <div class="J_step">
+                    <div class="s_item">
+                        <div class="i_left">
+                            <div class="l_icon">1</div>
+                        </div>
+                        <div class="i_right">
+                            <div class="r_title">注册会员开户</div>
+                            <div class="r_info">于至盈网注册登记成为会员</div>
+                        </div>
+                    </div>
+
+                    <div class="s_item">
+                        <div class="i_left">
+                            <div class="l_icon">2</div>
+                        </div>
+                        <div class="i_right">
+                            <div class="r_title">选择经纪商</div>
+                            <div class="r_info">选择适合您的经纪商</div>
+                        </div>
+                    </div>
+
+                    <div class="s_item">
+                        <div class="i_left">
+                            <div class="l_icon">3</div>
+                        </div>
+                        <div class="i_right">
+                            <div class="r_title">在2Profit开户</div>
+                            <div class="r_info">在2Profit进行开户，只有在本站开户才能获得返佣。</div>
+                        </div>
+                    </div>
+                    <div class="s_item">
+                        <div class="i_left">
+                            <div class="l_icon">4</div>
+                        </div>
+                        <div class="i_right">
+                            <div class="r_title">申请返佣</div>
+                            <div class="r_info">开户完成后，请您点击“申请返佣” 进行信息登记。</div>
+                        </div>
+                    </div>
+                    <div class="s_item">
+                        <div class="i_left">
+                            <div class="l_icon">5</div>
+                        </div>
+                        <div class="i_right">
+                            <div class="r_title">最终确认</div>
+                            <div class="r_info">工作人员会在1个工作日内通知申请结果。</div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="J_titleGray mt20">
+                    <div class="t_txt">返佣规则</div>
+                </div>
+
+                <div class="J_rule">
+
+                    <p>1、确认通过金斧子外汇网开户并在线提交了返佣申请。</p>
+
+                    <p>2、所有平台实现周返（每周三返上周佣金，法定节假日往后延迟第一个工作日）。</p>
+
+                    <p>3、0元起付，没有手数要求和限制。</p>
+
+                    <p>4、返佣支付方式为银行卡实时转账，免手续费。</p>
+
+                    <p>5、未提到的相关品种返佣比例以外汇平台官方支付给金斧子外汇的90%返还。</p>
+
+                    <p>6、返佣服务最终解释权归深圳市金斧子网络科技有限公司所有。</p>
+                </div>
+
+                <div class="J_titleGray mt20">
+                    <div class="t_txt">风险提示</div>
+                </div>
+
+
+                <div class="J_rule">
+                    <p>投资有风险，入市需谨慎，先求知，再投资，少损失！2Profit提供贵金属外汇平台商开户和返佣，为客户降低交易成本，但不接触客户资金，不参与外汇平台经营和交易；如果外汇平台出现不可抗拒的因素无法出金或返佣，我们也会及时提醒客户，客户需要自行承担风险。</p>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="J_content mt20 bgfff hasShadow">
+        <div class="fl c_760">
+            <div class="pau">
+                <div class="J_title">
+                    <div class="t_txt">至盈社区</div>
+                    <div class="t_tips"></div>
+                    <div class="t_more"><a href="#">更多投票&nbsp;&gt;</a></div>
+                </div>
+
+                <div class="J_voteTitle mt10">你是怎么看待2P的？<span class="fz14 cOrange">回应数量(20)</span></div>
+
+                <div class="J_voteSuccess mt10">
+                    <div class="v_item">
+                        <div class="i_left">你認為美元何時加息</div>
+                        <div class="i_right">
+                            <div style="width: 100%; background-color: #ee6a53;" class="r_bar">
+                                <div class="b_txt">100%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="v_item">
+                        <div class="i_left">你是否認為A股已見底</div>
+                        <div class="i_right">
+                            <div style="width: 80%; background-color: #9bcc6a;" class="r_bar">
+                                <div class="b_txt">80%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="v_item">
+                        <div class="i_left">你認為中央救市已有成效</div>
+                        <div class="i_right">
+                            <div style="width: 80%; background-color: #55c0e6;" class="r_bar">
+                                <div class="b_txt">80%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-ui="commentsList" class="J_commentsList">
+                    <div class="c_item">
+                        <div class="i_left">
+                            <div class="l_img">
+                                <img src="../tmp/face_08.jpg">
+                            </div>
+                            <div class="l_hg"></div>
+                        </div>
+                        <div class="i_right">
+                            <div class="r_info clearfix">
+                                <div class="fl">RayStation 时间: 2015-05-06</div>
+                            </div>
+                            <div class="r_content">实用  我喜欢！</div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="c_item">
+                        <div class="i_left">
+                            <div class="l_img">
+                                <img src="../tmp/face_03.jpg">
+                            </div>
+                            <div class="l_hg"></div>
+                        </div>
+                        <div class="i_right">
+                            <div class="r_info clearfix">
+                                <div class="fl">RayStation 时间: 2015-05-06</div>
+                            </div>
+                            <div class="r_content">非常满意的一次，全部满分，这次真的很开心，好好给你评价下，经得起摔打磕碰，也非常的正规；</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="J_btnGroup mt20 md">
+                    <a class="abtn green" href="#">我要投票</a>
+                    <a class="abtn blue" href="#">我要回应</a>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="fr c_430">
+            <div class="pau">
+                <div class="J_title">
+                    <div class="t_txt">公告</div>
+                    <div class="t_tips"></div>
+                    <div class="t_more"><a href="#">更多公告&nbsp;&gt;</a></div>
+                </div>
+                <div class="J_cjzxList">
+                    <div class="c_inner">
+                        <div class="i_main">
+                            <div class="m_item">
+                                <div class="i_info">
+                                    <div class="i_name"><a href="#">这里是公告标题</a></div>
+                                    <div class="i_txt"><i class="icon">󰃄</i><span>2015-15-15 00:00:00</span></div>
+                                </div>
+                            </div>
+                            <div class="m_item">
+                                <div class="i_info">
+                                    <div class="i_name"><a href="#">这里是公告标题</a></div>
+                                    <div class="i_txt"><i class="icon">󰃄</i><span>2015-15-15 00:00:00</span></div>
+                                </div>
+                            </div>
+                            <div class="m_item">
+                                <div class="i_info">
+                                    <div class="i_name"><a href="#">这里是公告标题</a></div>
+                                    <div class="i_txt"><i class="icon">󰃄</i><span>2015-15-15 00:00:00</span></div>
+                                </div>
+                            </div>
+                            <div class="m_item">
+                                <div class="i_info">
+                                    <div class="i_name"><a href="#">这里是公告标题</a></div>
+                                    <div class="i_txt"><i class="icon">󰃄</i><span>2015-15-15 00:00:00</span></div>
+                                </div>
+                            </div>
+                            <div class="m_item">
+                                <div class="i_info">
+                                    <div class="i_name"><a href="#">这里是公告标题</a></div>
+                                    <div class="i_txt"><i class="icon">󰃄</i><span>2015-15-15 00:00:00</span></div>
+                                </div>
+                            </div>
+                            <div class="m_item">
+                                <div class="i_info">
+                                    <div class="i_name"><a href="#">这里是公告标题</a></div>
+                                    <div class="i_txt"><i class="icon">󰃄</i><span>2015-15-15 00:00:00</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!--
+    <div class="J_cooperation mt20">
+        <div class="c_title"><span>合作伙伴</span></div>
+        <div class="c_inner">
+            <img src="../tmp/cooperation.png" />
+        </div>
+    </div>
+    -->
+
+    <div class="J_follow mt20">
+        <div class="f_txt">
+            <div class="t_center">
+                为何选择<span>至盈网</span>？
+            </div>
+        </div>
+        <div class="f_pic">
+            <img src="../images/follow.png" />
+        </div>
+
+    </div>
+
+
+    <div data-ui="helper" class="J_helper">
+        <div class="h_inner">
+            <div class="i_item">
+                <dl>
+                    <dt>至盈服务</dt>
+                    <dd><a href="javascript:;">经纪商搜索引擎</a></dd>
+                    <dd><a href="javascript:;">注册</a></dd>
+                    <dd><a href="javascript:;">登录</a></dd>
+                    <dd><a href="javascript:;">忘记密码</a></dd>
+                </dl>
+            </div>
+            <div class="i_item">
+                <dl>
+                    <dt>资讯中心</dt>
+                    <dd><a href="javascript:;">市场行情</a></dd>
+                    <dd><a href="javascript:;">财经新闻</a></dd>
+                    <dd><a href="javascript:;">财经日历</a></dd>
+                </dl>
+            </div>
+            <div class="i_item">
+                <dl>
+                    <dt>了解更多</dt>
+                    <dd><a href="javascript:;">常见问题</a></dd>
+                    <dd><a href="javascript:;">社区守则</a></dd>
+                    <dd><a href="javascript:;">免费条款</a></dd>
+                    <dd><a href="javascript:;">隐私政策</a></dd>
+                </dl>
+            </div>
+            <div class="i_item">
+                <dl>
+                    <dt>关于我们</dt>
+                    <dd><a href="javascript:;">至盈简介</a></dd>
+                    <dd><a href="javascript:;">加入我们</a></dd>
+                    <dd><a href="javascript:;">联系我们</a></dd>
+                </dl>
+            </div>
+            <div class="i_item">
+                <div class="t_code">
+                    <img src="../images/gw_code.jpg" />
+                    <p>（扫二维码关注我们）</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div data-ui="footer" class="J_footer">
+        <div class="f_inner">
+            <div class="i_copyright">
+                <div class="c_left">
+                </div>
+                <div class="c_right">
+                    <p>版权所有 广州e桶金有限公司 Copyright©2015 <a href="http://www.miitbeian.gov.cn/">粤ICP备15097761号-1</a></p>
+                </div>
+            </div>
+            <div class="i_share"></div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        $(function () {
+            jc.dialog.get("../dialog/申请返佣.htm", function (obj) {
+                //obj.show();
+
+            })
+
+
+        });
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>

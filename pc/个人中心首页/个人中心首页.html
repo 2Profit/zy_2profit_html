@@ -1,0 +1,500 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- 页面设计：?? | 页面重构：黄健聪 | 创建：2015-09-01 | 最后修改：2015-?-? -->
+    <title>e桶金</title>
+
+    <link rel="shortcut icon" href="/static/favicon/favicon.ico" />
+
+    <link href="../css/desktop.css" rel="stylesheet" />
+
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/uiExtend.js"></script>
+
+</head>
+<body>
+    <div data-ui="header" class="J_header">
+        <div class="h_inner">
+            <div class="i_logo">
+                <a href="#">
+                    <img src="../images/logo.png" /></a>
+            </div>
+            <div class="i_login">
+                <!-- 没登录显示这个 -->
+                <div class="l_not">
+                    <div class="n_item">
+                        <div class="i_default">
+                            <a href="#">登录</a>
+                        </div>
+                    </div>
+                    <div class="n_item">
+                        <div class="i_default">
+                            <a href="#">注册</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 登录了显示这个 -->
+                <div class="l_login">
+                    <div class="l_face">
+                        <img width="60" height="60" src="../tmp/u1.png" />
+                        <a href="#">
+                            <img src="../images/header_face.png" /></a>
+                    </div>
+                    <div class="l_info">
+                        <div class="i_name">比尔盖茨</div>
+                        <div class="i_logout"><a href="#">[退出]</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="i_nav">
+                <div class="n_item">
+                    <div class="i_default"><a href="#">首页</a></div>
+                    <div class="i_menu"></div>
+                </div>
+                <div class="n_item">
+                    <div class="i_default"><a href="#">金价行情</a></div>
+                    <div class="i_menu"></div>
+                </div>
+                <div class="n_item">
+                    <div class="i_default"><a href="#">财经日历</a></div>
+                    <div class="i_menu"></div>
+                </div>
+                <div class="n_item">
+                    <div class="i_default"><a href="#">为你选经销商</a></div>
+                    <div class="i_menu"></div>
+                </div>
+                <div class="n_item">
+                    <div class="i_default"><a href="#">社区</a></div>
+                    <div class="i_menu"></div>
+                </div>
+                <div class="n_item">
+                    <div class="i_default"><a href="#">活动</a></div>
+                    <div class="i_menu"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="J_wrap">
+
+        <div class="J_content mt20 bgfff hasShadow">
+            <div class="J_time clearfix">
+                <div class="t_item">
+                    <div class="i_icon">
+                        <img height="24" src="../images/flag_zg.png" />
+                    </div>
+                    <div class="i_txt">00:00:00</div>
+                </div>
+                <div class="t_item">
+                    <div class="i_icon">
+                        <img height="24" src="../images/flag_xg.png" />
+                    </div>
+                    <div class="i_txt">00:00:00</div>
+                </div>
+                <div class="t_item">
+                    <div class="i_icon">
+                        <img height="24" src="../images/flag_xxl.png" />
+                    </div>
+                    <div class="i_txt">00:00:00</div>
+                </div>
+                <div class="t_item">
+                    <div class="i_icon">
+                        <img height="24" src="../images/flag_rb.png" />
+                    </div>
+                    <div class="i_txt">00:00:00</div>
+                </div>
+                <div class="t_item">
+                    <div class="i_icon">
+                        <img height="24" src="../images/flag_yg.png" />
+                    </div>
+                    <div class="i_txt">00:00:00</div>
+                </div>
+                <div class="t_item">
+                    <div class="i_icon">
+                        <img height="24" src="../images/flag_mg.png" />
+                    </div>
+                    <div class="i_txt">00:00:00</div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="J_content mt20 bgfff hasShadow">
+            <div data-ui="theNews" class="J_theNews">
+                <marquee class="clearfix" onmouseout="this.start()" onmouseover="this.stop()">
+                    <a href="#">这是一条新闻</a>
+                    <a href="#">这是一条新闻</a>
+                    <a href="#">这是一条新闻</a>
+                    <a href="#">这是一条新闻</a>
+                    <a href="#">这是一条新闻</a>
+                    <a href="#">这是一条新闻</a>
+                    <a href="#">这是一条新闻</a>
+                    <a href="#">这是一条新闻</a>
+                </marquee>
+            </div>
+
+
+        </div>
+
+
+        <div class="J_content mt20 bgfff bg1 hasShadow">
+            <div class="fl c_180">
+                <div class="J_userInfo">
+                    <div class="u_left">
+                        <div class="l_face">
+                            <a class="f_hg"></a>
+                            <img style="width: 64px; height: 64px;" src="../images/userface.jpg" />
+                        </div>
+                    </div>
+                    <div class="u_right">
+                        <div class="r_name">马化腾</div>
+                        <div class="r_info">虚拟币：<span class="cOrange">300</span></div>
+                    </div>
+                </div>
+                <div class="J_leftMenu">
+                    <div class="l_item current">
+                        <div class="i_default"><a href="#"><i class="icon">󰃌</i>账户管理</a></div>
+                        <div class="i_menu">
+                            <div class="m_txt current"><a href="#"><i class="icon">󰂻</i>账户资料</a></div>
+                            <div class="m_txt"><a href="#"><i class="icon">󰃔</i>个人资料</a></div>
+                            <div class="m_txt"><a href="#"><i class="icon">󰃉</i>修改密码</a></div>
+                        </div>
+                    </div>
+                    <div class="l_item">
+                        <div class="i_default"><a href="#"><i class="icon">󰇸</i>资金管理</a></div>
+                        <div class="i_menu">
+                            <div class="m_txt"><a href="#"><i class="icon">󰀥</i>额度明細</a></div>
+                            <div class="m_txt"><a href="#"><i class="icon">󰀵</i>存款</a></div>
+                        </div>
+                    </div>
+                    <div class="l_item">
+                        <div class="i_default"><a href="#"><i class="icon">󰃵</i>交易资料</a></div>
+                        <div class="i_menu">
+                            <div class="m_txt"><a href="#"><i class="icon">󰄁</i>交易记录</a></div>
+                        </div>
+                    </div>
+                    <div class="l_item">
+                        <div class="i_default"><a href="#"><i class="icon">󰄎</i>服务管理</a></div>
+                        <div class="i_menu">
+                            <div class="m_txt"><a href="#"><i class="icon">󰃾</i>消息订阅</a></div>
+                            <div class="m_txt"><a href="#"><i class="icon">󰇫</i>微信服务</a></div>
+                            <div class="m_txt"><a href="#"><i class="icon">󰊛</i>问题回馈</a></div>
+                        </div>
+                    </div>
+                    <div class="l_item">
+                        <div class="i_default"><a href="#"><i class="icon">󰄊</i>我的活动</a></div>
+                    </div>
+                    <div class="l_item">
+                        <div class="i_default"><a href="#"><i class="icon">󰇀</i>投票功能</a></div>
+                    </div>
+                    <div class="l_item">
+                        <div class="i_default"><a href="#"><i class="icon">󰊑</i>公告</a></div>
+                    </div>
+                    <div class="l_item">
+                        <div class="i_default"><a href="#"><i class="icon">󰃕</i>老师专区</a></div>
+                        <div class="i_menu">
+                            <div class="m_txt"><a href="#"><i class="icon">󰂰</i>银行资料</a></div>
+                            <div class="m_txt"><a href="#"><i class="icon">󰅐</i>取款</a></div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="fr c_1000">
+
+                <div class="J_title less">
+                    <div class="t_txt">账户资料</div>
+                    <div class="t_tips"></div>
+                    <div class="t_more"></div>
+                </div>
+                <div class="plrb20">
+                    <div class="J_miniTitle">
+                        <div class="m_token"></div>
+                        <div class="m_txt">账户信息</div>
+                    </div>
+
+                    <div class="J_userInfoTable">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><b>姓名：</b></td>
+                                    <td>张生</td>
+                                    <td><b>帐号：</b></td>
+                                    <td>4028263</td>
+                                    <td><b>用户名：</b></td>
+                                    <td>abc123</td>
+                                    <td><b>性别：</b></td>
+                                    <td>男</td>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="J_miniTitle mt10">
+                        <div class="m_token"></div>
+                        <div class="m_txt">已绑定的交易帐号</div>
+                    </div>
+
+
+
+                    <div class="J_table mt10">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>平台</td>
+                                    <td>帐号</td>
+                                    <td>经纪商</td>
+                                    <td>状态</td>
+                                    <td>虚拟币余额</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>MT4</td>
+                                    <td>Member_21awdad1aa</td>
+                                    <td>深圳市腾讯计算机系统有限公司</td>
+                                    <td>已绑定</td>
+                                    <td><span class="cOrange">￥300,000,00</span> <a class="abtn orange" href="#">充值</a></td>
+                                </tr>
+                                <tr>
+                                    <td>MT4</td>
+                                    <td>Member_78adwa1baa</td>
+                                    <td>阿里巴巴网络技术有限公司</td>
+                                    <td>已绑定</td>
+                                    <td><span class="cOrange">￥842,000,00</span> <a class="abtn orange" href="#">充值</a></td>
+                                </tr>
+                                <tr>
+                                    <td>MT4</td>
+                                    <td>Member_awd1212317</td>
+                                    <td>深圳市迅雷网络技术有限公司</td>
+                                    <td>已绑定</td>
+                                    <td><span class="cOrange">￥420,000,00</span> <a class="abtn orange" href="#">充值</a></td>
+                                </tr>
+                                <tr>
+                                    <td>MT4</td>
+                                    <td>Member_515af12121</td>
+                                    <td>北京小米科技有限责任公司</td>
+                                    <td>已绑定</td>
+                                    <td><span class="cOrange">￥542,000,00</span> <a class="abtn orange" href="#">充值</a></td>
+                                </tr>
+                                <tr>
+                                    <td>MT4</td>
+                                    <td>Member_12adwaaw21</td>
+                                    <td>北京小米科技有限责任公司</td>
+                                    <td>已绑定</td>
+                                    <td><span class="cOrange">￥384,000,00</span> <a class="abtn orange" href="#">充值</a></td>
+                                </tr>
+                                <tr>
+                                    <td>MT4</td>
+                                    <td>Member_131cf1c121</td>
+                                    <td>魅族科技有限公司</td>
+                                    <td>已绑定</td>
+                                    <td><span class="cOrange">￥246,000,00</span> <a class="abtn orange" href="#">充值</a></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="J_miniTitle mt10">
+                        <div class="m_token"></div>
+                        <div class="m_txt">重要公告</div>
+                    </div>
+
+
+                    <div class="J_table mt10">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>标题</td>
+                                    <td>开始日期</td>
+                                    <td>结束日期</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a class="alink black hover" href="#">2p准备更新2.0版本了！</a></td>
+                                    <td>2015-12-15 23:59:59</td>
+                                    <td>2015-12-16 23:59:59</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="J_miniTitle mt10">
+                        <div class="m_token"></div>
+                        <div class="m_txt">广告专区</div>
+                    </div>
+
+
+                    <div class="J_table mt10">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><a class="alink black hover" href="#">如何成為喊單達人? 秘密就在『喊出我天地』! (查看更多)</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a class="alink black hover" href="#">如何成為K線達人? 下載K線達人手機app (查看更多)</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div data-ui="helper" class="J_helper">
+        <div class="h_inner">
+            <div class="i_item">
+                <dl>
+                    <dt>快速服务</dt>
+                    <dd><a href="javascript:;">注册</a></dd>
+                    <dd><a href="javascript:;">登录</a></dd>
+                    <dd><a href="javascript:;">激活卡</a></dd>
+                    <dd><a href="javascript:;">找回密码</a></dd>
+                    <dd><a href="javascript:;">充值</a></dd>
+                </dl>
+            </div>
+            <div class="i_item">
+                <dl>
+                    <dt>帮助中心</dt>
+                    <dd><a href="javascript:;">免费体验</a></dd>
+                    <dd><a href="javascript:;">报名课程</a></dd>
+                    <dd><a href="javascript:;">充值</a></dd>
+                    <dd><a href="javascript:;">支付方式</a></dd>
+                    <dd><a href="javascript:;">使用指南</a></dd>
+                </dl>
+            </div>
+            <div class="i_item">
+                <dl>
+                    <dt>关于我们</dt>
+                    <dd><a href="javascript:;">了解我们</a></dd>
+                    <dd><a href="javascript:;">联系方式</a></dd>
+                    <dd><a href="javascript:;">会员协议</a></dd>
+                    <dd><a href="javascript:;">加入我们</a></dd>
+                    <dd><a href="javascript:;">意见反馈</a></dd>
+                </dl>
+            </div>
+            <div class="i_item">
+                <dl>
+                    <dt>联系我们</dt>
+                    <dd><a href="javascript:;">QQ空间</a></dd>
+                    <dd><a href="javascript:;">新浪微博</a></dd>
+                    <dd><a href="javascript:;">QQ群：8381212348</a></dd>
+                    <dd><a href="javascript:;">QQ群：2991239393</a></dd>
+                </dl>
+            </div>
+            <div class="i_item">
+                <div class="t_code">
+                    <img src="../images/gw_code.jpg" />
+                    <p>（扫二维码关注我们）</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- 新增 -->
+    <div data-ui="gotoTop" class="J_gotoTop">
+        <div class="g_list">
+            <div class="l_item">
+                <div class="i_silder">
+                    <div class="s_icon">
+                        <a href="javascript:;">
+                            <img src="../images/i_1.png"></a>
+                    </div>
+                    <div class="s_txt"><a href="javascript:;">至盈热线</a></div>
+                </div>
+                <div class="i_tips" style="display: none;">
+                    <div class="t_title">至盈热线</div>
+                    <div class="t_main">
+                        <div class="m_rx">020-85274013</div>
+                    </div>
+                    <div class="t_dot"></div>
+                    <div class="t_dot2"></div>
+                </div>
+            </div>
+            <div class="l_item">
+                <div class="i_silder">
+                    <div class="s_icon">
+                        <a href="javascript:;">
+                            <img src="../images/i_2.png"></a>
+                    </div>
+                    <div class="s_txt"><a href="javascript:;">至盈客服</a></div>
+                </div>
+                <div class="i_tips">
+                    <div class="t_title">至盈客服</div>
+                    <div class="t_main">
+                        <div class="m_kf">
+                            <p>在线咨询1：<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=3354599721&amp;site=qq&amp;menu=yes">3354599721</a></p>
+                            <p>在线咨询2：<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2950873854&amp;site=qq&amp;menu=yes">2950873854</a></p>
+                            <p>技术支持：<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=3329242472&amp;site=qq&amp;menu=yes">3329242472</a></p>
+                        </div>
+                    </div>
+                    <div class="t_dot"></div>
+                    <div class="t_dot2"></div>
+                </div>
+            </div>
+            <div class="l_item">
+                <div class="i_silder">
+                    <div class="s_icon">
+                        <a href="javascript:;">
+                            <img src="../images/i_3.png"></a>
+                    </div>
+                    <div class="s_txt"><a href="javascript:;">关注至盈</a></div>
+                </div>
+                <div class="i_tips" style="display: none;">
+                    <div class="t_main">
+                        <div class="m_code">
+                            <img width="200" src="../images/gw_code.jpg">
+                        </div>
+                    </div>
+                    <div class="t_dot"></div>
+                    <div class="t_dot2"></div>
+                </div>
+            </div>
+            <div class="l_item">
+                <div class="i_silder">
+                    <div class="s_icon">
+                        <a href="javascript:;">
+                            <img src="../images/i_4.png"></a>
+                    </div>
+                    <div class="s_txt"><a href="javascript:$('html,body').stop().animate({scrollTop:0});">回到顶部</a></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- 新增 -->
+
+
+    <div data-ui="footer" class="J_footer">
+        <div class="f_inner">
+            <div class="i_copyright">
+                <div class="c_left">
+                </div>
+                <div class="c_right">
+                    <p>版权所有 广州e桶金有限公司 Copyright©2015 <a href="http://www.miitbeian.gov.cn/">粤ICP备150591231号-12</a></p>
+                </div>
+            </div>
+            <div class="i_share"></div>
+        </div>
+    </div>
+
+</body>
+</html>

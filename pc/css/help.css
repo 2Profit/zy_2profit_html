@@ -1,0 +1,20 @@
+.clearfix{clear: both;}
+a{color:#333;}
+a:hover{color:#fdb41b ;}
+.help-content{ width: 1200px;margin: 0 auto; min-height: 560px; }
+
+.help-L{width: 210px;  min-height:300px; float: left; background: #fff;margin-bottom: 40px;  margin-right: 15px; box-shadow:#ccc 0px 0px 10px;
+-moz-box-shabow:#ccc 0px 0px 10px; -webkit-box-shadow: #ccc 0px 0px 10px; position: fixed; z-index: 100; +z-index: 0; +position: absolute;+min-height: auto;}
+.help-L dl{+float: none; +display: inline-block;}
+
+
+.help-L dl  dt{ background: #fdb41b; font-size: 14px;padding: 5px 18px; border-bottom: 1px solid #fff;}
+.help-L dl dd{ padding-left:18px; line-height: 30px;}
+#help-L-about{+margin-top: 160px; background: #fff; +width:210px ;}
+ #help-L-about dt{ +background: #fdb41b; +font-size: 14px;+padding: 5px 18px; +border-bottom: 1px solid #fff;}
+ #help-L-about dd{ +padding-left:18px; +line-height: 30px;}
+
+.help-R{width: 975px; background: #FFFFFF;margin-bottom: 40px; float: right; box-shadow:#ccc 0px 0px 10px;-moz-box-shabow:#ccc 0px 0px 10px; -webkit-box-shadow: #ccc 0px 0px 10px;+top:140px; +margin-right:355px;+margin-top:-480px;}
+.help-R h3{padding: 10px 30px; font-size: 16px; border-bottom: 1px solid #e8e8e8;}
+.help-R ul{padding:10px 30px 30px 30px;}
+.help-R ul li{line-height: 30px; text-align: justify;}

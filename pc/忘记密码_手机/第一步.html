@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- 页面设计：?? | 页面重构：黄健聪 | 创建：2015-09-01 | 最后修改：2015-?-? -->
+    <title>e桶金</title>
+
+    <link rel="shortcut icon" href="/static/favicon/favicon.ico" />
+
+    <link href="../css/desktop.css" rel="stylesheet" />
+
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/uiExtend.js"></script>
+
+
+</head>
+<body>
+    <div data-ui="header" class="J_header">
+        <div class="h_inner">
+            <div class="i_logo">
+                <a href="#">
+                    <img src="../images/logo.png" /></a>
+            </div>
+            <div class="i_login">
+                <!-- 没登录显示这个 -->
+                <div class="l_not">
+                    <div class="n_item">
+                        <div class="i_default">
+                            <a href="#">登录</a>
+                        </div>
+                    </div>
+                    <div class="n_item">
+                        <div class="i_default">
+                            <a href="#">注册</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 登录了显示这个 -->
+                <div class="l_login">
+                    <div class="l_face">
+                        <img width="60" height="60" src="../tmp/u1.png" />
+                        <a href="#">
+                            <img src="../images/header_face.png" /></a>
+                    </div>
+                    <div class="l_info">
+                        <div class="i_name">比尔盖茨</div>
+                        <div class="i_logout"><a href="#">[退出]</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="i_nav">
+                <div class="n_item">
+                    <div class="i_default"><a href="#">首页</a></div>
+                    <div class="i_menu"></div>
+                </div>
+                <div class="n_item">
+                    <div class="i_default"><a href="#">金价行情</a></div>
+                    <div class="i_menu"></div>
+                </div>
+                <div class="n_item">
+                    <div class="i_default"><a href="#">财经日历</a></div>
+                    <div class="i_menu"></div>
+                </div>
+                <div class="n_item">
+                    <div class="i_default"><a href="#">为你选经销商</a></div>
+                    <div class="i_menu"></div>
+                </div>
+                <div class="n_item">
+                    <div class="i_default"><a href="#">社区</a></div>
+                    <div class="i_menu"></div>
+                </div>
+                <div class="n_item">
+                    <div class="i_default"><a href="#">活动</a></div>
+                    <div class="i_menu"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="J_content bgfff mt20 hasShadow">
+        <div class="J_title">
+            <div class="t_txt has">通过手机号找回密码</div>
+        </div>
+        <div class="pt40">
+            <div class="J_retrieve">
+                <div class="r_inner">
+                    <div class="i_header">
+                        <div class="h_item active clearfix">
+                            <div class="i_icon i1"></div>
+                            <div class="i_txt">输入账号</div>
+                        </div>
+                        <div class="h_item clearfix">
+                            <div class="i_icon i2"></div>
+                            <div class="i_txt">验证身份</div>
+                        </div>
+                        <div class="h_item clearfix">
+                            <div class="i_icon i3"></div>
+                            <div class="i_txt">重置密码</div>
+                        </div>
+                        <div class="h_item clearfix">
+                            <div class="i_icon i4"></div>
+                            <div class="i_txt">完成</div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="mt40">
+            <div class="J_register pb40">
+                <form action="">
+                    <table class="r_table">
+                        <tbody>
+                            <tr class="isError">
+                                <td class="tar">
+                                    <div class="J_toolsBar">
+                                        <div class="t_label"><b class="cDeepRed">*</b>用户名：</div>
+                                    </div>
+                                </td>
+                                <td style="width: 370px;">
+                                    <div class="J_toolsBar">
+                                        <div class="t_text">
+                                            <label>
+                                                <input type="text"></label></div>
+                                    </div>
+                                </td>
+                                <td class="t_tips">
+                                    <div class="t_error"><i class="icon">󰂳</i>会员名不能为空</div>
+                                    <div class="t_success">
+                                        <i class="icon">󰂲</i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tar">
+                                    <div class="J_toolsBar">
+                                        <div class="t_label"><b class="cDeepRed">*</b> 验证码：</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="J_toolsBar">
+                                        <div class="t_text">
+                                            <label>
+                                                <input type="text"></label></div>
+                                    </div>
+                                </td>
+                                <td class="t_tips"><a href="#">
+                                    <img src="../../tmp/get_img.jpg"></a></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <div class="J_btnGroup mt20">
+                                        <a class="abtn green" href="javascript:;">下一步</a>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div data-ui="footer" class="J_footer mt20">
+        <div class="f_inner">
+            <div class="i_copyright">
+                <div class="c_left">
+                </div>
+                <div class="c_right">
+                    <p>版权所有 广州e桶金有限公司 Copyright©2015 <a href="http://www.miitbeian.gov.cn/">粤ICP备150591231号-12</a></p>
+                </div>
+            </div>
+            <div class="i_share"></div>
+        </div>
+    </div>
+
+</body>
+</html>
